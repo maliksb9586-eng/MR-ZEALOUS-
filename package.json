@@ -1,0 +1,43 @@
+{
+  "name": "double-wicket-tournament",
+  "version": "2.0.0",
+  "description": "Double Wicket Tournament desktop and mobile app",
+  "main": "desktop/main.cjs",
+  "author": "Double Wicket Tournament",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win nsis --x64",
+    "dist:win:portable": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^40.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.doublewicket.tournament",
+    "productName": "Double Wicket Tournament",
+    "directories": { "output": "dist" },
+    "files": [
+      "index.html",
+      "app.js",
+      "styles.css",
+      "manifest.webmanifest",
+      "sw.js",
+      "assets/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "assets/app.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Double Wicket Tournament"
+    }
+  }
+}

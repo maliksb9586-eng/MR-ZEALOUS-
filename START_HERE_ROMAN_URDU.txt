@@ -1,0 +1,40 @@
+DOUBLE WICKET TOURNAMENT — PC AUR MOBILE APP
+
+IS UPDATE MEIN:
+- Unlimited groups bana sakte hain.
+- Total tournament teams maximum 32 rahengi.
+- Har active group mein kam az kam 4 teams honi chahiye.
+- Har group ka apna round-robin schedule aur points table hoga.
+- Har group ki Top 4 teams knockout mein qualify karengi.
+- Knockout rounds aur zaroorat par byes automatic banenge.
+- Batting aur bowling leaderboard ko group ke hisaab se filter kar sakte hain.
+- Purana scoring system aur purana saved data preserve kiya gaya hai.
+
+WINDOWS PC PAR INSTALLER BANANE KA TAREEQA:
+1. Windows 10/11 PC par Node.js LTS install karein: https://nodejs.org
+2. ZIP extract karein.
+3. Extracted folder kholein.
+4. Folder ki address bar mein cmd likh kar Enter karein.
+5. Command Prompt mein ye commands chalayein:
+
+   npm install
+   npm run dist:win
+
+6. Build hone ke baad dist folder mein "Double Wicket Tournament Setup.exe" milegi.
+7. Setup.exe open karein aur installation complete karein.
+8. Desktop shortcut ya Start Menu se app chalayein.
+
+MOBILE PAR INSTALL KARNE KA TAREEQA:
+1. Isi folder ki tamam files aur assets folder GitHub repository ke ROOT mein upload karein.
+2. GitHub > Settings > Pages kholein.
+3. Deploy from a branch, branch main aur folder /(root) select karein, phir Save karein.
+4. GitHub Pages ka HTTPS link Android Chrome mein open karein.
+5. Chrome ke 3 dots (⋮) > Install app / Add to Home screen karein.
+
+iPhone: Safari mein HTTPS link open karein > Share > Add to Home Screen.
+
+DATA KI ZAROORI BAAT:
+PC aur mobile ka data filhaal alag alag device par save hota hai. Automatic internet sync abhi nahi hai. Ek device se Backup JSON download karke doosre device mein Backup / Restore se transfer karein. Purana browser data clear na karein.
+
+NOTE:
+Windows .exe installer Windows PC par npm install aur npm run dist:win commands se build hoga. Mobile version GitHub Pages se install hone wali PWA hai; direct APK is ZIP mein shamil nahi.

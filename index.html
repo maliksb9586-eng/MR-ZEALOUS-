@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101b18">
+  <meta name="description" content="Double Wicket Tournament manager, live scorer and points table.">
+  <title>Double Wicket Tournament</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark" aria-hidden="true"><span>DW</span></div>
+      <div class="brand-copy">
+        <div class="eyebrow">TOURNAMENT MANAGER</div>
+        <h1>Double Wicket <span>Tournament</span></h1>
+      </div>
+      <button id="installBtn" class="icon-btn install-btn" hidden title="Install app">⇩ <span>Install</span></button>
+      <button id="backupBtn" class="icon-btn" title="Backup / Restore">↥</button>
+    </header>
+
+    <div class="status-strip">
+      <span class="live-dot"></span>
+      <span id="headerStatus">Ready to set up your tournament</span>
+      <span class="local-save" id="saveStatus">Saved on this device</span>
+    </div>
+
+    <main id="mainContent" class="main-content" aria-live="polite"></main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button data-page="home" class="nav-item active"><span>⌂</span><small>Home</small></button>
+      <button data-page="groups" class="nav-item"><span>▦</span><small>Groups</small></button>
+      <button data-page="teams" class="nav-item"><span>♟</span><small>Teams</small></button>
+      <button data-page="schedule" class="nav-item"><span>▦</span><small>Schedule</small></button>
+      <button data-page="points" class="nav-item"><span>▤</span><small>Points</small></button>
+      <button data-page="batters" class="nav-item"><span>◆</span><small>Batting</small></button>
+      <button data-page="bowlers" class="nav-item"><span>◉</span><small>Bowling</small></button>
+      <button data-page="history" class="nav-item"><span>◷</span><small>History</small></button>
+    </nav>
+  </div>
+
+  <div id="modalRoot"></div>
+  <input id="restoreFile" type="file" accept="application/json,.json" hidden>
+  <script src="app.js" defer></script>
+</body>
+</html>

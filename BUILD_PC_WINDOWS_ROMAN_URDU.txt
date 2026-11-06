@@ -1,0 +1,32 @@
+DOUBLE WICKET TOURNAMENT — WINDOWS PC APP BANANE KA TAREEQA
+
+Is project mein PC ke liye Electron desktop wrapper add kiya gaya hai. Windows installer banane ke liye Windows 10/11 PC par ye steps karein:
+
+1. Node.js LTS install karein: https://nodejs.org
+2. Is ZIP ko extract karein.
+3. Extracted folder kholein.
+4. Folder ke andar address bar mein cmd likh kar Enter karein.
+5. Command Prompt mein ye commands ek ek karke chalayein:
+
+   npm install
+   npm run dist:win
+
+6. Build complete hone par dist folder ke andar "Double Wicket Tournament Setup.exe" milegi.
+7. Setup.exe par double-click karke PC par install karein.
+
+App chalane ke liye desktop shortcut ya Start Menu se Double Wicket Tournament open karein.
+
+MOBILE PAR INSTALL:
+1. Isi project ki web files GitHub repository ke ROOT mein upload karein.
+2. GitHub > Settings > Pages mein Deploy from a branch, main, /(root) select karke Save karein.
+3. HTTPS GitHub Pages link Android Chrome mein kholein.
+4. Chrome menu (3 dots) > Install app / Add to Home screen karein.
+
+IMPORTANT DATA NOTE:
+PC app aur mobile browser apna data apne-apne device par save karte hain. Dono ke darmiyan automatic live sync abhi included nahi. Ek device se Backup JSON download karke doosre device mein Backup / Restore se transfer kar sakte hain. Purana browser data clear na karein.
+
+GROUPS:
+- Groups create karne ki tadaad unlimited hai.
+- Tournament mein maximum 32 teams total ho sakti hain.
+- Har active group mein kam az kam 4 teams honi chahiye.
+- Har group ke top 4 teams cross-group knockout mein qualify karte hain.
